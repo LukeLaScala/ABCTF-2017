@@ -166,7 +166,7 @@ $colorPurple);
 	padding: 10px;
 	text-transform: uppercase;
 	font-weight: 600;
-	font-size: 12px;
+	font-size: 0.8rem;
 	font-kerning: normal;
 	letter-spacing: 0.24px;
 	border-radius: 6px;
@@ -374,13 +374,13 @@ $colorGray);
 @include textColor(purple,
 $colorPurple);
 @include fontSize(header,
-32px,
+2rem,
 400);
 @include fontSize(title,
-24px,
+1rem,
 400);
 @include fontSize(body,
-18px,
+1.2rem,
 400);
 .text-white--opacity {
 	color: rgba(255, 255, 255, 0.7);
@@ -394,7 +394,7 @@ $colorPurple);
 	padding: 10px;
 	text-transform: uppercase;
 	font-weight: 600;
-	font-size: 12px;
+	font-size: 0.8rem;
 	font-kerning: normal;
 	letter-spacing: 0.24px;
 	border-radius: 6px;
@@ -462,10 +462,15 @@ section {
 }
 
 .section_cover {
-	width: 100%;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
 	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
+}
+
+#pattern-full {
+	background-image: url("/assets/Pattern.png");
+	background-size: cover;
 }
 
 .section-half--right {
@@ -811,6 +816,25 @@ li {
 	transform: rotateZ(6deg);
 }
 
-// 6 width grid
-@mixin gridSize($columnNumber,
-$columnWidth) {}
+@media (max-width: 600px) {
+	body {
+		font-size: 60%;
+	}
+	.section--green {
+		height: 150vh;
+	}
+	.section-half--right {
+		margin-top: 70vh;
+	}
+	.main-header {
+		display: block;
+		text-align: center;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		p {
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+}
