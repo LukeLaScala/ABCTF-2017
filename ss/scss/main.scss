@@ -80,6 +80,10 @@ $colorWhite: #FFFFFF;
 	background-position: center center;
 }
 
+.illustration--half {
+	width: 80%;
+}
+
 .margin-right--xsmall {
 	margin-right: 16px;
 }
@@ -455,6 +459,20 @@ section {
 	&:hover {
 		background-color: rgba(0, 0, 0, 0.2);
 	}
+}
+
+.section_cover {
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.section-half--right {
+	position: absolute;
+	right: 8vw;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 .launch--login {

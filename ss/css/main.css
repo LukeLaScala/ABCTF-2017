@@ -35,7 +35,11 @@ html {
   -webkit-font-smoothing: antialiased; }
 
 .pattern {
-}
+  background-image: url("../../assets/Pattern.svg");
+  background-position: center center; }
+
+.illustration--half {
+  width: 80%; }
 
 .margin-right--xsmall {
   margin-right: 16px; }
@@ -240,6 +244,10 @@ html {
 	margin-left: -16vw;
 }
 */
+.pattern {
+  background-image: url("/assets/Pattern.svg");
+  background-position: center; }
+
 .margin-right--xsmall {
   margin-right: 16px; }
 
@@ -253,18 +261,11 @@ html {
   width: 100vw;
   height: 100vh; }
 
-.section-half--left {
+.section--half {
   position: relative;
-  width: 25vw;
+  width: 50vw;
   height: 100vh;
   float: left; }
-
-.section-half--right {
-  position: relative;
-  width: 75vw;
-  height: 100vh;
-  float: right; }
-
 
 .hidden {
   overflow: hidden; }
@@ -428,6 +429,18 @@ section {
   background-color: #5882FF; }
   .button--purple:hover {
     background-color: rgba(0, 0, 0, 0.2); }
+
+.section_cover {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.section-half--right {
+  position: absolute;
+  right: 8vw;
+  top: 50%;
+  transform: translateY(-50%); }
 
 .launch--login {
   position: absolute;
