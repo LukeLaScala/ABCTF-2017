@@ -17,6 +17,12 @@ $colorWhite: #FFFFFF;
 	background-color: #12A2FF;
 }
 
+#pat {
+	position: absolute;
+	width: 100%;
+	translate: transformY(-50%);
+}
+
 
 /*
 .main-header {

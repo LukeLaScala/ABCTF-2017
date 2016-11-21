@@ -22,6 +22,11 @@ html {
 ::selection {
   background-color: #12A2FF; }
 
+#pat {
+  position: absolute;
+  width: 100%;
+  translate: transformY(-50%); }
+
 /*
 .main-header {
 	margin-left: -16vw;
